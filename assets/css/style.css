@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/Spices.jpg");
+    font-family:'Spartan';
+    
+  }
+
+  h1 {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 30px;
+    font-size: 40px;
+}
+.container {
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.timer {
+    margin: auto;
+    width: 500px;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.instructions {
+    width: 600px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.question-box {
+    width: 600px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    align-content: center;
+}
+
+p {
+    width: 500px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: white;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+input {
+    margin: 0px 5px 0px 5px;
+}
+
+button {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#results {
+    width: 500px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#restart-button {
+    align-self: center;
+    margin-top: 30px;
+}
