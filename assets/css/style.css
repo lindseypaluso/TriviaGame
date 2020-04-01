@@ -6,17 +6,15 @@ html, body {
     
   }
 
-  h1 {
+h1 {
+    width: 50%;
     border: 1px solid black;
-    margin: 20px;
+    margin: 20px auto;
     padding: 30px;
     font-size: 40px;
+    background-color: white;
 }
 .container {
-    background-color: white;
-    margin: auto;
-    width: 500px;
-    height: 100%;
     text-align: center;
     padding: 20px;
 }
@@ -24,22 +22,25 @@ html, body {
 
 
 .timer {
-    margin: auto;
-    width: 500px;
+    margin: 10px auto;
+    width: 30%;
     background-color: white;
-    margin: 10px;
     border: 1px solid black;
     padding: 10px;
 }
 
 .instructions {
-    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
     background-color: white;
     border: 1px solid black;
 }
 
 .question-box {
-    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
     background-color: white;
     border: 1px solid black;
     padding: 10px;
@@ -47,13 +48,14 @@ html, body {
 }
 
 p {
-    width: 500px;
     background-color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 form {
+    margin-right: auto;
+    margin-left: auto;
     background-color: white;
     margin: 5px;
     margin-bottom: 30px;
@@ -70,10 +72,12 @@ button {
 }
 
 #results {
-    width: 500px;
+    width: 50%;
     background-color: white;
     border: 1px solid black;
     margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 20px;
 }
 

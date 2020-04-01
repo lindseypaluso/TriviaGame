@@ -1,8 +1,7 @@
 // Set a var for the Interval
 var timerInterval;
 
-// When the page loads, start a countdown timer of 1 minute and display it on the html
-// Function to start the timer counting backwards, decreasing by 1 every second
+
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     timerInterval = setInterval(function () {
@@ -15,12 +14,12 @@ function startTimer(duration, display) {
         display.text(minutes + ":" + seconds);
 
         if (--timer < 0) {
-            getTheScore();
+            getScore();
         }
     }, 1000);
 }
 
-// Create a var to have the timer run for two minutes
+// Create a var to have the timer run for one minute
 var oneMinute;
 
 // When page loads, start a countdown timer of 1 minute
@@ -41,11 +40,7 @@ var wrongAnswersText = $("#wronganswers-text");
 var unansweredText = $("#unanswered-text");
 
 // Function to get the score
-function getTheScore() {
-    // Vars to hold the score
-    correct = 0;
-    wrong = 0;
-    unanswered = 0;
+function getScore() {
     // Stop the timer
     clearInterval(timerInterval);
     // Object referencing the question names on the html
@@ -57,6 +52,7 @@ function getTheScore() {
     // For loop grabbing the question names and determining the correct answer for each question and adding the scores together
     for (name of questionNames) {
         var answer = $('input[name="' + name + '"]:checked').val();
+        console.log(answer);
         if (answer === "Right") {
             correct++;
         } else if (answer === "Wrong") {
@@ -71,9 +67,9 @@ function getTheScore() {
     unansweredText.text("Unanswered questions: " + unanswered);
 }
 
-// When you hit the submit button, the getTheScore function is called
+// When you hit the submit button, the getScore function is called
 $("#submit-button").click(function() {
-    getTheScore();
+    getScore();
 });
 
 // Create a function to restart the game
