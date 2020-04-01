@@ -49,7 +49,6 @@ function getScore() {
 
     for (name of questionNames) {
         var answer = $('input[name="' + name + '"]:checked').val();
-        console.log(answer);
         if (answer === "Right") {
             correct++;
         } else if (answer === "Wrong") {
